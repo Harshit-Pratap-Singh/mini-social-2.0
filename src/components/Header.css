@@ -1,0 +1,24 @@
+.header{
+    display: flex;
+    height: 9vh;
+    width: 100%;
+    background-color: #303F9F;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+.header__name{
+    margin-left: 1rem;
+    padding: 5px;
+    color: white;
+}
+
+.header__signIn{
+    margin-right: 1rem;
+    /* border: 1px solid white;
+    border-radius: 3rem;
+    bo */
+    color: white;
+}
