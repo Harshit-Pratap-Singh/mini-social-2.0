@@ -8,7 +8,9 @@ function Createpost() {
     const history = useHistory();
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
-    const [{ posts }, dispatch] = useStateValue()
+    const [{ posts }, dispatch] = useStateValue();
+    const[{auth}]=useStateValue();
+    if(!auth)history.push('/errr');
 
     const handleClick = (event) => {
         event.preventDefault();
@@ -17,6 +19,7 @@ function Createpost() {
             title: title,
             description: description
         })
+        history.push('/userhome');
     }
     return (
         <div className='createpost'>

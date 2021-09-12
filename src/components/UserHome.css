@@ -1,0 +1,31 @@
+.userhome{
+/* width: 100%; */
+min-height: 91vh;
+background-image: linear-gradient(rgba(48,63,159,1),rgba(48,63,159,0.5));
+padding: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.userhome>button{
+    width: fit-content;
+    font-size: 2rem;
+    height: fit-content;
+    background-color: rgb(255, 255, 255,0);
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.userhome__create{
+    all:unset;
+    text-decoration: none;
+}
+
+.userhome>button:hover{
+    background-color: rgb(48,63,159);
+}

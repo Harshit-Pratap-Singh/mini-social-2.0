@@ -1,7 +1,8 @@
-import { Route, Router, Switch } from 'react-router';
+import { Redirect, Route, Router, Switch } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Createpost from './components/Createpost';
+import EditPost from './components/EditPost';
 import Header from './components/Header';
 import Home from './components/Home';
 import Login from './components/Login';
@@ -26,6 +27,8 @@ function App() {
             <Header/>
             <UserHome/>
           </Route>
+          <Route path='/editpost/:id' component={EditPost}/>
+          <Redirect to='/'/>
         </Switch>
 
       </div>
