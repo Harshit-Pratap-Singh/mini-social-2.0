@@ -23,7 +23,7 @@ const reducer=( state,action) => {
         posts: [...state.posts,item]
         }
     case 'DELETE_POST':
-        const temp=state.posts.filter((post)=> action.id != post.id)
+        const temp=state.posts.filter((post)=> action.id !== post.id)
         return{
             ...state,
             posts:temp
@@ -49,6 +49,10 @@ const reducer=( state,action) => {
         return{
             ...state,
             auth: false
+        }
+    default:
+        return {
+            ...state
         }
     }
 }

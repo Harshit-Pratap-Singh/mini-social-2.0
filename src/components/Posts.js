@@ -3,7 +3,7 @@ import { useStateValue } from '../StateProvider'
 import Post from './Post';
 import './Posts.css'
 function Posts() {
-    const [{posts},dispatch]=useStateValue();
+    const [{posts}]=useStateValue();
     console.log();    
     return (
         <div className='posts'>

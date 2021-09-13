@@ -8,8 +8,8 @@ function Createpost() {
     const history = useHistory();
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
-    const [{ posts }, dispatch] = useStateValue();
-    const[{auth}]=useStateValue();
+    const [{auth}, dispatch] = useStateValue();
+    
     if(!auth)history.push('/errr');
 
     const handleClick = (event) => {

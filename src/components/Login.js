@@ -16,9 +16,9 @@ function Login() {
         console.log(password);
         console.log(user.password);
 
-            if(user.email == email)
+            if(user.email === email)
             {
-                if(user.password == password){
+                if(user.password === password){
                 dispatch({
                     type: 'AUTH_USER',
                 })

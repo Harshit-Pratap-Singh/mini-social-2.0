@@ -1,4 +1,4 @@
-import { Redirect, Route, Router, Switch } from 'react-router';
+import { Redirect, Route, Switch } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Createpost from './components/Createpost';
