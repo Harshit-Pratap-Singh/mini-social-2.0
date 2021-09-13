@@ -13,8 +13,8 @@ function Login() {
 
     const signIn=(event)=>{
         event.preventDefault();
-        console.log(password);
-        console.log(user.password);
+        console.log(typeof password);
+        console.log(typeof(user.password));
 
             if(user.email === email)
             {
