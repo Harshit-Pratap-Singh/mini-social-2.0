@@ -1,6 +1,5 @@
-import React from 'react'
+import React,{ useState } from 'react'
 import { useHistory } from 'react-router'
-import { useState } from 'react/cjs/react.development';
 import { useStateValue } from '../StateProvider';
 import './Createpost.css';
 
@@ -9,7 +8,7 @@ function Createpost() {
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
     const [{auth}, dispatch] = useStateValue();
-    
+
     if(!auth)history.push('/errr');
 
     const handleClick = (event) => {
