@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Login from './components/Login';
 import UserHome from './components/UserHome';
+import Register from './components/Register';
 
 function App() {
   return (
@@ -28,6 +29,10 @@ function App() {
             <UserHome/>
           </Route>
           <Route path='/editpost/:id' component={EditPost}/>
+          <Route path='/signup'>
+          <Register/>
+          </Route>
+
           <Redirect to='/'/>
         </Switch>
 

@@ -1,9 +1,6 @@
 export const initialState = {
 posts:[],
-user:{
-    email: "test@test.com",
-    password: "12345678"
-},
+user:null,
 auth:false
 }
 
@@ -43,12 +40,14 @@ const reducer=( state,action) => {
     case 'AUTH_USER':
         return{
             ...state,
+            user:action.payload,
             auth: true
         }
         case 'DEAUTH_USER':
         return{
             ...state,
-            auth: false
+            auth: false,
+            user:null
         }
     default:
         return {

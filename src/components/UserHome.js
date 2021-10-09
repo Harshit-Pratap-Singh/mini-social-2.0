@@ -8,7 +8,10 @@ import { useHistory } from 'react-router'
 function UserHome() {
     const[{auth}]=useStateValue();
     const history=useHistory()
-    if(!auth)history.push('/errr');
+    if(!auth){
+        alert('Please LogIn First');
+        history.push('/errr');
+    }
     return (
         <div className='userhome'>
             <Posts />
