@@ -24,9 +24,9 @@ function Login() {
                    payload: email
                })
                alert(res.data.message);
+               history.push('/userhome')
             })
-           .then(() => history.push('/userhome'))
-           .catch(err => alert(err.message))
+           .catch((err) =>alert(err.response.data))
        }
        else{
            alert('Invalid Input');
