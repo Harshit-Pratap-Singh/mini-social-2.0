@@ -1,31 +1,56 @@
 .userhome{
-/* width: 100%; */
 min-height: 91vh;
-background-image: linear-gradient(rgba(48,63,159,1),rgba(48,63,159,0.5));
+background-color:rgb(240,242,245);
 padding: 20px;
 display: flex;
 flex-direction: column;
 align-items: center;
 }
 
-.userhome>button{
-    width: fit-content;
-    font-size: 2rem;
-    height: fit-content;
-    background-color: rgb(255, 255, 255,0);
-    color: white;
-    border: 2px solid white;
-    border-radius: 20px;
-    padding: 10px;
-    font-weight: 600;
-    transition: 0.3s;
+.userhome__createPosts{
+    display : flex;
+   width :35vw;
+   max-width: 500px;
+   padding: 15px;
+    background-color: white;
+    border:1px solid white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px lightgrey, -3px -3px 10px lightgrey;
+    align-items: center;
+}
+.userhome__dp{
+    margin-right: 15px;
+}
+.pic{
+    width:4em;
+    border: 1px solid white;
+    border-radius: 40px;
+    cursor: pointer ;
+
 }
 
 .userhome__create{
-    all:unset;
-    text-decoration: none;
+    background-color: rgba(241, 241, 241, 0.829);
+    border-radius: 40px;
+    padding: 10px;
+    width: 100%;
+    transition: 0.2s;
+    color: rgba(128, 128, 128, 0.719);
+    cursor: pointer ;
+    /* box-shadow: 3px 3px 5px lightgrey inset, -3px -3px 5px lightgrey inset; */
+
+
 }
 
-.userhome>button:hover{
-    background-color: rgb(48,63,159);
+.userhome__create>span{
+    font-size: 1.2rem;
+    color: inherit;
+    letter-spacing: 2px;
+    transition: 0.1s;
+}
+
+.userhome__create:hover{
+    background-color: rgb(219, 218, 218);
+    color: rgb(128, 128, 128);
+
 }

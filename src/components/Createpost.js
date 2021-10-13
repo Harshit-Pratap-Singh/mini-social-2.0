@@ -9,7 +9,7 @@ function Createpost() {
     const [description, setDescription] = useState('');
     const [{auth}, dispatch] = useStateValue();
 
-    if(!auth)history.push('/errr');
+    // if(!auth)history.push('/errr');
 
     const handleClick = (event) => {
         event.preventDefault();
@@ -32,7 +32,7 @@ function Createpost() {
                     <h3>Description</h3>
                     <textarea cols={20} rows={5} onChange={e => setDescription(e.target.value)} value={description} />
                     <button type='submit' onClick={handleClick}>Create</button>
-                    <button onClick={() => history.push('/posts')}>Cancel</button>
+                    <button onClick={() => history.push('/userhome')}>Cancel</button>
                 </form>
             </div>
         </div>
