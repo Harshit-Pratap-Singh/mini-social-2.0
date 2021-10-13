@@ -10,6 +10,8 @@ import UserHome from './components/UserHome';
 import Register from './components/Register';
 import Post_modal from './components/Post_modal';
 import 'bootstrap/dist/css/bootstrap.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 

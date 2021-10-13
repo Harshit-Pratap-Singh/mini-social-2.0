@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, Label, Input } from 'reactstrap';
 import { useStateValue } from '../StateProvider';
 
+
 const Post_modal = (props) => {
     const[{auth},dispatch]=useStateValue();
     const [isFilled, setIsFilled] = useState(false);
@@ -22,7 +23,7 @@ const Post_modal = (props) => {
     return (
         <>
             <Modal isOpen={props.modal} toggle={props.toggle}  centered={true}>
-                <ModalHeader toggle={props.toggle} cssModule={{'modal-title': 'w-100 text-center'}}>Create Post</ModalHeader>
+                <ModalHeader toggle={props.toggle} className='align-items-baseline pb-2' cssModule={{'modal-title': 'w-100 text-center'}}>Create Post</ModalHeader>
                 <ModalBody>
                     <Input type='text'
                         name="title"

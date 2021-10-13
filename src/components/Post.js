@@ -18,11 +18,11 @@ function Post({post}) {
 
     return (
         <div className='post'>
-            <h1>{post.title}</h1>
-            <p>{post.description}</p>
+            <h1 className='post__title'>{post.title}</h1>
+            <p className='psot__description'>{post.description}</p>
             <div className="post__option">
-                <button onClick={handleEdit}>Edit</button>
-                <button onClick={handleDelete}>Delete</button>
+                <button className='post__editButton' onClick={handleEdit}>Edit</button>
+                <button className='post__deleteButton' onClick={handleDelete}>Delete</button>
 
             </div>
         </div>

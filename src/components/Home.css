@@ -32,14 +32,16 @@ align-items: center;
 
 }   
 
-.home__option > h1:hover{
+.home__h1:hover{
     color: #303F9F;
     background-color: white;
 }
 
 .home__nodec{
     all:unset;
+
 }
+
 @media only screen and (max-width: 600px) {
     .home__1{
         width: 100%;
